@@ -10,6 +10,7 @@ A comprehensive repository exploring Generative AI concepts with practical imple
 - [Projects](#projects)
 - [Dependencies](#dependencies)
 - [Usage](#usage)
+- [Architecture](#architecture)
 
 ## 🎯 Overview
 
@@ -23,6 +24,7 @@ This repository contains hands-on implementations and explorations of state-of-t
 
 ```
 GenAI/
+├── ARCHITECTURE.md           # System architecture diagram
 ├── README.md                 # This file
 ├── requirements.txt          # Python dependencies
 └── Notebooks/
@@ -92,7 +94,17 @@ Fine-tune Microsoft's Phi-2 model on insurance claims data using LoRA (Low-Rank 
 | `requests` | 2.31.0 | HTTP library |
 | `python-dotenv` | 0.21.0 | Environment variable management |
 | `playwright` | 1.41.2 | Web automation |
+🏗️ Architecture
 
+See [ARCHITECTURE.md](ARCHITECTURE.md) for a detailed system architecture diagram showing:
+- Data processing pipeline
+- Model architecture with LoRA adapters
+- Training pipeline
+- Inference workflow
+
+The diagram provides a visual overview of how data flows through the fine-tuning and inference stages.
+
+## 
 ## 💻 Usage
 
 ### Running the Fine-tuning Notebook
