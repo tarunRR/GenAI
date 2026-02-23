@@ -1,0 +1,13 @@
+name: ML CI
+
+on: [push]
+
+jobs:
+  test-model:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install deps
+        run: pip install -r requirements.txt
+      - name: Run evaluation
+        run: python evaluation/evaluate.py
